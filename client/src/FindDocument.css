@@ -1,0 +1,116 @@
+/* .docs-body {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(144, 190, 165, 0.5), rgba(5, 68, 34, 0.75)), url("./images/ASI-bg.png");
+    
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+} */
+
+
+.document-list {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    
+    padding: 20px;
+    padding-top:1px;
+    font-family: arial;
+}
+
+.title-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#uploaded-docs-text {
+    color: #054422;
+    font-size: 23px;
+    font-weight: bold;
+} 
+
+.search-doc {
+    display: flex;
+    gap: 10px;
+}
+
+#search-field {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DBDBDB;
+}
+
+#search-button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #054422;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#generate-excel-button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #054422;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#search-button:hover {
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.1),0 12px 10px 0 rgba(0,0,0,0.1);
+}
+
+.list-of-docs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#uploaded-doc-line {
+    width: 1000px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #DBDBDB;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.doc-number {
+    width: 200px;
+}
+
+.doc-field {
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+.view-button {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #054422;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
