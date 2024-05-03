@@ -12,10 +12,16 @@ const upload = multer({
 });
 
 app.use(bodyParser.json({ limit: "20mb" }));
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://asi-ims.vercel.app"],
+    method: ["POST", "GET"],
+    credentials: true
+  }
+));
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/asi-documents", {
+  .connect("mongodb+srv://cbcontaoi:asiIMS123@asi-ims.adzaodf.mongodb.net/test?retryWrites=true&w=majority&appName=ASI-IMS", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
